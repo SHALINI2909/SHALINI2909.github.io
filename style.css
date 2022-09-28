@@ -40,6 +40,7 @@ section {
 .skills,
 .project,
 .contact,
+.GitHub,
 footer {
   font-family: "Poppins", sans-serif;
 }
@@ -476,7 +477,24 @@ section .title::after {
 .skills-content .right .mysql::before {
   width: 70%;
 }
-
+.pskills_div {
+  text-align: center;
+  justify-content: center;
+}
+.pskills_div h1 {
+  margin-bottom: 20px;
+}
+.pskills_div h1 span {
+  color: tomato;
+}
+.pskills {
+  display: flex;
+  gap: 20px;
+}
+.pskills img {
+  width: 50%;
+  border-radius: 10px;
+}
 /* project section styling */
 .project .title::after {
   content: "Recent Works";
@@ -590,6 +608,92 @@ section .title::after {
   height: 120px;
 }
 
+
+/* Statistics section Styling */
+.statistics {
+  background-color: #111;
+  color: white;
+}
+
+.statistics .row {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.service-list {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.service-list div {
+  background: #262626;
+  height: 150px;
+  padding: 30px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+
+}
+
+/* Stats */
+.statisticsTitle>h1 {
+  font-weight: 700;
+  margin-top: 100px;
+  position: relative;
+  width: fit-content;
+}
+
+.statisticsTitle>h1::after {
+  background-color: #506aff;
+  content: " ";
+  height: 20%;
+  position: absolute;
+  left: -5px;
+  top: 55%;
+  width: calc(100% + 10px);
+  z-index: -1;
+}
+
+.individualStat {
+  width: 140px;
+  text-align: center;
+}
+
+.individualStat>div:nth-child(1) {
+  margin: auto;
+  font-size: 28px;
+  font-weight: 600;
+  height: 130px;
+  width: 130px;
+  border: 10px solid #506aff;
+  border-radius: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Contact Footer */
+#contact {
+  background: url("/resources/footer.png");
+  min-height: 22vh;
+  color: black;
+}
+
+.contactIcons {
+  font-size: 30px;
+}
+
+.contactIcons:hover {
+  color: white;
+  cursor: pointer;
+}
+
 /* contact section styling */
 .contact .title::after {
   content: "Get in Touch";
@@ -696,6 +800,13 @@ section .title::after {
   color: Tomato;
   background: none;
 }
+
+#msg {
+  color: rgb(182, 101, 86);
+  display: block;
+  margin-top: 5px;
+}
+
 /* footer section styling */
 footer {
   background: #111;
@@ -709,6 +820,9 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+footer .name {
+  color: tomato;
 }
 
 /* responsive media query start */
@@ -788,6 +902,9 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 }
+/* .skills .skills-Category {
+  display: none;
+} */
 
 @media (max-width: 700px) {
   .max-width {
@@ -846,12 +963,4 @@ footer span a:hover {
 
 
 
-#msg {
-  color: rgb(182, 101, 86);
-  display: block;
-  margin-top: 5px;
-}
 
-footer .name {
-  color: tomato;
-}
