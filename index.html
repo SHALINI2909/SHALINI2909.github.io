@@ -50,7 +50,7 @@
                 <li><a href="#github">Statistics<i class="fas fa-signal"></i></a></li>
                 <li><a href="#portfolio">Project<i class="fas fa-laptop"></i></a></li>
                 <li><a href="#contact">Contact<i class="fas fa-phone"></i></a></li>
-                <li><a href="image/Shalini-Resume.pdf" target="_blank" download>Resume<i class="fas fa-download"></i></a></li>
+                <li><a href="image/Shalini-Resume.pdf" target="_blank" download onclick="resumeBtn()">Resume<i class="fas fa-download"></i></a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -483,6 +483,13 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+<!-- Top-Resume button function -->
+<script>
+    function resumeBtn(){
+		window.open("https://drive.google.com/file/d/1XO9FyowKmLTuypsozcJGVp4l222Z4zzg/view?usp=share_link")
+	}
+ </script>
 
 <!-- Hamburger/Sidemenu function -->
 <script>
